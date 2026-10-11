@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+work/
+data/
+third_party/
+wvaq_work/
+wvaq_demo/
+wvaq_check/
+.venv
