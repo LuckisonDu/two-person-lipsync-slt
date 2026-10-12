@@ -59,6 +59,8 @@ clips/
 
 No video, audio, landmark data, model weights or results are distributed.
 
+`natural_faults/` adds the blind-rater labels (rater codes only) and per-clip scores behind the paper's natural-fault results (Sec. 5.4), with a script that recomputes them.
+
 ## Data (download yourself)
 
 **Seamless Interaction** (Meta), licence **CC BY-NC 4.0** (non-commercial):
