@@ -4,12 +4,13 @@ Faults that generators make on their own, with no injected error, judged by blin
 
 | Generator | Clips | Modes compared | Raters |
 |---|---|---|---|
-| `adapter`: our two-person audio adapter (a separate lip-sync generation submission; only evaluated here) | 39 inputs × 2 modes = 78 | `single` (one track, no person labels) vs. `duo` (two tracks with explicit assignment), seed 1234 | R-N1 (a project member), R-N2, R-N3 |
+| `adapter_batch1`: our two-person audio adapter (a separate lip-sync generation submission; only evaluated here) | 39 inputs × 2 modes = 78 | `single` (one track, no person labels) vs. `duo` (two tracks with explicit assignment), seed 1234 | R-N1 (a project member), R-N2, R-N3 |
+| `adapter_batch2`: the same adapter on 39 further inputs (none shared with the other batches); pre-registered | 39 inputs × 2 modes = 78 | as batch 1 | R-A1, R-A2, R-A3 |
 | `ltx2`: LTX-2.3 (takes one mixed track; who speaks is set by the prompt) | 39 inputs × 2 modes = 78 | `unnamed` (prompt does not name the speaker) vs. `named`, seed 42 | R-M1, R-M2, R-M3 |
 
 In every clip only one person should speak; `speaker_side` says which. Raters saw the clip with the speaker's own voice,
 did not know the mode, did not see other raters' answers or any metric score, and were not authors of the paper.
-Rater identities are not released (codes only). The LTX-2 rating protocol, analysis rules and predictions were committed
+Rater identities are not released (codes only). For the LTX-2 batch and adapter batch 2, the rating protocol, analysis rules and predictions were committed
 before any rater answered.
 
 ## Files
